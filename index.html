@@ -5,126 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Worldpack Industries</title>
 
-<style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+<link rel="stylesheet" href="style.css">
 
-body{
-background:#f8f8f8;
-color:#333;
-}
-
-header{
-background:#000;
-color:#d4af37;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-header h1{
-font-size:30px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-}
-
-.hero{
-background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1400&q=80");
-background-size:cover;
-background-position:center;
-height:80vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-padding:20px;
-}
-
-.hero h2{
-font-size:50px;
-margin-bottom:15px;
-}
-
-.hero p{
-font-size:20px;
-}
-
-.btn{
-display:inline-block;
-margin-top:25px;
-background:#d4af37;
-color:black;
-padding:15px 30px;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
-}
-
-section{
-padding:60px 10%;
-}
-
-.title{
-text-align:center;
-font-size:35px;
-margin-bottom:40px;
-color:#222;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:20px;
-border-radius:12px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-text-align:center;
-}
-
-.card h3{
-margin-bottom:10px;
-color:#000;
-}
-
-.about{
-background:white;
-line-height:1.8;
-}
-
-footer{
-background:#000;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:40px;
-}
-
-.whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -132,88 +16,125 @@ font-weight:bold;
 
 <header>
 
-<h1>Worldpack Industries</h1>
+<div class="logo">
+<img src="logo.jpeg" alt="Worldpack Industries">
+</div>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
 </nav>
 
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 
-<div>
+<div class="hero-text">
 
-<h2>Premium Disposable Packaging Solutions</h2>
+<h1>Premium Disposable Packaging Solutions</h1>
 
-<p>Manufacturers of PET Cups, Disposable Cups, Lids & Food Packaging Products.</p>
+<p>
+Worldpack Industries is one of Pakistan's trusted manufacturers of premium PET cups,
+paper cups, disposable lids and food packaging products.
+</p>
 
-<a class="btn" href="#">Request a Quote</a>
-
-</div>
-
-</section>
-
-<section>
-
-<h2 class="title">Our Products</h2>
-
-<div class="products">
-
-<div class="card">
-<h3>PET Cups</h3>
-<p>Crystal clear premium PET cups available in multiple sizes.</p>
-</div>
-
-<div class="card">
-<h3>Disposable Cups</h3>
-<p>High-quality disposable drinking cups for all beverages.</p>
-</div>
-
-<div class="card">
-<h3>Dome Lids</h3>
-<p>Strong lids compatible with PET cups.</p>
-</div>
-
-<div class="card">
-<h3>Food Containers</h3>
-<p>Durable disposable food packaging solutions.</p>
-</div>
+<a href="#products" class="btn">
+View Products
+</a>
 
 </div>
 
 </section>
 
-<section class="about">
+<section id="about">
 
-<h2 class="title">About Worldpack Industries</h2>
+<h2>About Worldpack Industries</h2>
 
 <p>
 
-Worldpack Industries is a leading manufacturer of disposable packaging products including PET cups, disposable glasses, lids and food containers. We focus on premium quality, hygiene and customer satisfaction while serving restaurants, cafés, wholesalers and beverage brands.
+Worldpack Industries provides premium quality disposable food packaging solutions for cafés,
+restaurants, bakeries, juice bars and food chains across Pakistan.
+
+We focus on quality, durability and customer satisfaction while providing competitive pricing.
 
 </p>
 
 </section>
 
+<section id="products">
+
+<h2>Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="cup.jpeg">
+<h3>PET Cups</h3>
+<p>Crystal clear premium PET beverage cups.</p>
+</div>
+
+<div class="card">
+<img src="dome-lid.jpeg">
+<h3>Dome Lids</h3>
+<p>High quality dome lids for smoothies & cold drinks.</p>
+</div>
+
+<div class="card">
+<img src="flat-lid.jpeg">
+<h3>Flat Lids</h3>
+<p>Premium PET flat lids with leak resistant fitting.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-box">
+
+<h3>Email</h3>
+
+<p>
+worldpackcontact@gmail.com
+</p>
+
+<h3>WhatsApp</h3>
+
+<p>
+
+<a href="https://wa.me/923271790907">
+Mian Faizan
+</a>
+
+<br><br>
+
+<a href="https://wa.me/923000177003">
+Mudassir Gulzar
+</a>
+
+</p>
+
+</div>
+
+</section>
+
 <footer>
 
-<h2>Worldpack Industries</h2>
+<p>
 
-<p>Disposable Cup & Glass Manufacturing Company</p>
+© 2026 Worldpack Industries
 
-<p>Email: info@worldpack.com</p>
-
-<p>Phone: +92-XXX-XXXXXXX</p>
-
-<p>© 2026 Worldpack Industries</p>
+</p>
 
 </footer>
 
-<a class="whatsapp" href="#">WhatsApp</a>
+<script src="scripts.js"></script>
 
 </body>
+
 </html>
