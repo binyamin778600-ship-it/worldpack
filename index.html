@@ -1,75 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WorldPack Industries</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WorldPack Industries</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0a0a0a;
+  color: white;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: black;
+  position: sticky;
+  top: 0;
+}
+
+.logo img {
+  height: 60px;
+}
+
+nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url("hero.jpeg.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 55px;
+}
+
+.hero span {
+  color: gold;
+}
+
+.hero p {
+  color: #ccc;
+}
+
+.btn {
+  padding: 12px 25px;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.primary {
+  background: gold;
+  color: black;
+}
+
+.primary:hover {
+  background: #d4af37;
+}
+
+.secondary {
+  border: 1px solid gold;
+  color: gold;
+}
+
+.secondary:hover {
+  background: gold;
+  color: black;
+}
+
+/* PRODUCTS */
+.products {
+  padding: 60px;
+  text-align: center;
+}
+
+.products h2 {
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: #111;
+  padding: 20px;
+  width: 220px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  transition: 0.4s;
+}
+
+.product-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  border-color: gold;
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 22px;
+  padding: 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* MOBILE */
+@media(max-width: 768px){
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+}
+</style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
   <div class="logo">
-    <img src="logo(1).jpeg" alt="WorldPack Logo">
+    <img src="logo(1).jpeg">
   </div>
 
   <nav>
     <a href="#">Home</a>
-    <a href="#">About</a>
     <a href="#">Products</a>
     <a href="#">Contact</a>
   </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="overlay"></div>
-
   <div class="hero-content">
-    <p class="tag">✓ Free Delivery Across Pakistan</p>
+    <p>✓ Free Delivery Across Pakistan</p>
 
-    <h1>
-      Premium <span>Packaging</span><br>
-      Solutions
-    </h1>
+    <h1>Premium <span>Packaging</span> Solutions</h1>
 
-    <p class="desc">
+    <p>
       High quality PET Cups, Dome Lids and Flat Lids
       for cafes, restaurants and food chains.
     </p>
 
-    <div class="buttons">
-      <a href="#" class="btn primary">View Products</a>
-      <a href="#" class="btn secondary">WhatsApp Us</a>
-    </div>
+    <a href="#products" class="btn primary">View Products</a>
+    <a href="https://wa.me/923271770907" class="btn secondary">WhatsApp</a>
   </div>
 </section>
 
-<!-- PRODUCTS -->
-<section class="products">
+<section class="products" id="products">
   <h2>Our Products</h2>
 
   <div class="product-grid">
 
     <div class="product-card">
-      <img src="cup.jpeg(1).jpeg" alt="Plastic Cup">
+      <img src="cup.jpeg(1).jpeg">
       <h3>Plastic Cup</h3>
     </div>
 
     <div class="product-card">
-      <img src="dom-lid.jpeg(1).jpeg" alt="Dome Lid">
+      <img src="dom-lid.jpeg(1).jpeg">
       <h3>Dome Lid</h3>
     </div>
 
     <div class="product-card">
-      <img src="lid.jpg (3)(1).jpeg" alt="Flat Lid">
+      <img src="lid.jpg (3)(1).jpeg">
       <h3>Flat Lid</h3>
     </div>
 
   </div>
 </section>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/923271770907" class="whatsapp">💬</a>
 
 </body>
 </html>
