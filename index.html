@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WorldPack</title>
+<title>WorldPack Industries</title>
 
 <style>
 body {
@@ -14,18 +14,19 @@ body {
 /* HEADER */
 header {
   background: black;
-  padding: 10px 20px;
+  padding: 15px;
+  text-align: center;
 }
 
 .logo {
-  height: 40px;
+  height: 50px;
 }
 
 /* HERO */
 .hero {
   position: relative;
   height: 100vh;
-  background: url('images/hero.jpeg') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1581091215367-59ab6b1c3a3b') center/cover no-repeat;
 }
 
 .hero::before {
@@ -45,46 +46,60 @@ header {
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 12px 25px;
   background: gold;
   color: black;
   text-decoration: none;
   margin: 10px;
+  display: inline-block;
 }
 
 /* PRODUCTS */
 .products {
   background: #111;
-  padding: 40px;
+  padding: 50px;
   text-align: center;
+  color: white;
 }
 
 .products img {
   width: 200px;
-  margin: 10px;
+  margin: 15px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.products img:hover {
+  transform: scale(1.1);
 }
 </style>
 
 </head>
+
 <body>
 
 <header>
-  <img src="images/logo.jpeg" class="logo">
+  <!-- ONLINE LOGO -->
+  <img src="https://via.placeholder.com/200x60?text=WorldPack+Logo" class="logo">
 </header>
 
 <section class="hero">
   <div class="hero-content">
-    <h1>Premium Packaging</h1>
-    <p>High quality PET Cups & Lids</p>
+    <h1>Premium Disposable Packaging</h1>
+    <p>پاکستان کی بہترین کوالٹی PET Cups اور Lids</p>
+
     <a href="#" class="btn">View Products</a>
-    <a href="#" class="btn">WhatsApp</a>
+    <a href="https://wa.me/923271770907" class="btn">WhatsApp Us</a>
   </div>
 </section>
 
 <section class="products">
-  <img src="images/cup.jpeg">
-  <img src="images/dom-lid.jpeg">
-  <img src="images/lid.jpeg">
+  <h2>Our Products</h2>
+
+  <!-- ONLINE PRODUCT IMAGES -->
+  <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db">
+  <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+  <img src="https://images.unsplash.com/photo-1590080877777-1c7c6e75d7b4">
 </section>
 
 </body>
