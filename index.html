@@ -3,37 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WorldPack Industries</title>
+<title>WorldPack</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial;
-  background: #0a0a0a;
-  color: white;
 }
 
 /* HEADER */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 50px;
   background: black;
+  padding: 10px 20px;
 }
 
-.logo img {
-  height: 60px;
+.logo {
+  height: 40px;
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
-  background: url("hero.jpeg.jpeg") center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
+  height: 100vh;
+  background: url('images/hero.jpeg') center/cover no-repeat;
 }
 
 .hero::before {
@@ -41,77 +33,58 @@ header {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.6);
 }
 
 .hero-content {
   position: relative;
+  z-index: 2;
+  color: white;
   text-align: center;
+  top: 40%;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: gold;
+  color: black;
+  text-decoration: none;
+  margin: 10px;
 }
 
 /* PRODUCTS */
 .products {
-  padding: 60px;
+  background: #111;
+  padding: 40px;
   text-align: center;
 }
 
-.product-grid {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.product-card {
-  background: #111;
-  padding: 20px;
+.products img {
   width: 200px;
-}
-
-.product-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
+  margin: 10px;
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <header>
-  <!-- FIXED LOGO -->
-  <div class="logo">
-    <img src="./logo(1).jpeg">
-  </div>
+  <img src="images/logo.jpeg" class="logo">
 </header>
 
 <section class="hero">
   <div class="hero-content">
     <h1>Premium Packaging</h1>
+    <p>High quality PET Cups & Lids</p>
+    <a href="#" class="btn">View Products</a>
+    <a href="#" class="btn">WhatsApp</a>
   </div>
 </section>
 
 <section class="products">
-  <h2>Products</h2>
-
-  <div class="product-grid">
-
-    <!-- FIXED PATHS -->
-    <div class="product-card">
-      <img src="./cup.jpeg(1).jpeg">
-      <h3>Cup</h3>
-    </div>
-
-    <div class="product-card">
-      <img src="./dom-lid.jpeg(1).jpeg">
-      <h3>Dome Lid</h3>
-    </div>
-
-    <div class="product-card">
-      <img src="./lid.jpg (3)(1).jpeg">
-      <h3>Flat Lid</h3>
-    </div>
-
-  </div>
+  <img src="images/cup.jpeg">
+  <img src="images/dom-lid.jpeg">
+  <img src="images/lid.jpeg">
 </section>
 
 </body>
