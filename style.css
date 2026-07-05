@@ -227,3 +227,22 @@ max-width:100%;
 }
 
 }
+BB.hero{
+    justify-content:flex-start !important;
+    text-align:left !important;
+    padding-left:8% !important;
+}
+
+.hero-text{
+    max-width:520px;
+    margin-right:auto;
+}
+
+.hero h1{
+    font-size:58px;
+}
+
+.hero p{
+    font-size:18px;
+    line-height:1.7;
+}
