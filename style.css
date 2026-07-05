@@ -60,27 +60,28 @@ height:90vh;
 
 display:flex;
 align-items:center;
-justify-content:center;
-text-align:center;
-padding:20px;
+justify-content:flex-start;
+text-align:left;
+padding:0 8%;
 }
 
 .hero-text{
-max-width:800px;
+max-width:520px;
 color:white;
 }
 
 .hero h1{
-font-size:60px;
+font-size:56px;
 font-weight:700;
-line-height:1.2;
+line-height:1.1;
 margin-bottom:20px;
 text-shadow:0 4px 15px rgba(0,0,0,.4);
 }
 
 .hero p{
-font-size:22px;
+font-size:18px;
 color:#f2f2f2;
+line-height:1.7;
 margin-bottom:35px;
 }
 
@@ -204,6 +205,9 @@ margin:10px;
 
 .hero{
 height:75vh;
+padding:0 6%;
+justify-content:center;
+text-align:center;
 }
 
 .hero h1{
@@ -218,17 +222,8 @@ font-size:18px;
 height:55px;
 }
 
-}
 .hero-text{
-    max-width: 520px;
+max-width:100%;
 }
 
-.hero-text h1{
-    font-size: 56px;
-    line-height: 1.1;
-}
-
-.hero-text p{
-    font-size: 18px;
-    line-height: 1.7;
 }
