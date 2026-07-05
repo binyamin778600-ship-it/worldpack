@@ -1,90 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WorldPack</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorldPack Industries</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-/* HEADER */
-header {
-  background: black;
-  padding: 10px 20px;
-}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #111;
+      color: white;
+    }
 
-.logo {
-  height: 40px;
-}
+    header img {
+      height: 50px;
+    }
 
-/* HERO */
-.hero {
-  position: relative;
-  height: 100vh;
-  background: url('images/hero.jpeg') center/cover no-repeat;
-}
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
 
-.hero::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-}
+    /* HERO */
+    .hero {
+      padding: 80px 30px;
+      background: #f5f5f5;
+    }
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-align: center;
-  top: 40%;
-}
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
 
-.btn {
-  padding: 10px 20px;
-  background: gold;
-  color: black;
-  text-decoration: none;
-  margin: 10px;
-}
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
 
-/* PRODUCTS */
-.products {
-  background: #111;
-  padding: 40px;
-  text-align: center;
-}
+    .btn {
+      padding: 10px 20px;
+      background: black;
+      color: white;
+      text-decoration: none;
+      margin-right: 10px;
+    }
 
-.products img {
-  width: 200px;
-  margin: 10px;
-}
-</style>
+    /* PRODUCTS */
+    .products {
+      padding: 50px;
+      text-align: center;
+    }
 
+    .product-grid {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .product-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      width: 200px;
+    }
+
+    .product-card img {
+      width: 100%;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-  <img src="images/logo.jpeg" class="logo">
+  <img src="logo.jpeg" alt="Logo">
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-content">
-    <h1>Premium Packaging</h1>
-    <p>High quality PET Cups & Lids</p>
-    <a href="#" class="btn">View Products</a>
-    <a href="#" class="btn">WhatsApp</a>
-  </div>
+  <h1>Premium Disposable Packaging</h1>
+  <p>پاکستان کی بہترین کوالٹی PET Cups اور Lids</p>
+
+  <a href="#" class="btn">View Products</a>
+  <a href="https://wa.me/923271770907" class="btn">WhatsApp</a>
 </section>
 
 <section class="products">
-  <img src="images/cup.jpeg">
-  <img src="images/dom-lid.jpeg">
-  <img src="images/lid.jpeg">
+  <h2>Our Products</h2>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="cup.jpeg.jpeg">
+      <h3>Plastic Cup</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="dom-lid.jpeg.jpeg">
+      <h3>Dome Lid</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="lid.jpg (3).jpeg">
+      <h3>Flat Lid</h3>
+    </div>
+
+  </div>
 </section>
 
 </body>
