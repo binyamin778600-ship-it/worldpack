@@ -95,3 +95,52 @@ nav a {
   border: 1px solid #d4af37;
   color: #d4af37;
 }
+/* PRODUCTS SECTION */
+.products {
+  padding: 80px 60px;
+  background: #0a0a0a;
+  text-align: center;
+  color: white;
+}
+
+.products h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #d4af37;
+}
+
+/* GRID */
+.product-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.product-card {
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 280px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.product-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.product-card h3 {
+  padding: 15px;
+}
+
+/* 🔥 HOVER ANIMATION */
+.product-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
+}
