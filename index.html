@@ -1,215 +1,150 @@
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-html{
-scroll-behavior:smooth;
-}
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-background:#f7f7f7;
-color:#333;
-}
+<title>Worldpack Industries</title>
 
-/* HEADER */
-header{
-background:#111;
-padding:15px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-position:sticky;
-top:0;
-z-index:1000;
-}
+<link rel="stylesheet" href="style.css">
 
-.logo img{
-height:65px;
-background:white;
-padding:6px;
-border-radius:10px;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:600;
-}
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-nav a:hover{
-color:#d4af37;
-}
+</head>
 
-/* HERO */
-.hero{
-height:90vh;
-background:
-linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
-url("hero.jpeg.jpeg");
-background-size:cover;
-background-position:center;
+<body>
 
-display:flex;
-align-items:center;
-justify-content:flex-start;
+<header>
 
-padding:0 8%;
-}
+<div class="logo">
+<img src="Logo.jpg.jpeg" alt="Worldpack Industries Logo">
+</div>
 
-.hero-text{
-max-width:550px;
-color:white;
-animation:fadeIn 1s ease-in-out;
-}
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</nav>
 
-.badge{
-display:inline-block;
-background:#d4af37;
-color:#111;
-padding:6px 12px;
-border-radius:20px;
-font-size:12px;
-font-weight:700;
-margin-bottom:15px;
-}
+</header>
 
-.hero h1{
-font-size:55px;
-line-height:1.1;
-margin-bottom:15px;
-}
+<section class="hero" id="home">
 
-.hero p{
-font-size:18px;
-margin-bottom:25px;
-color:#eee;
-}
+<div class="hero-text">
 
-.btn{
-background:#d4af37;
-color:#111;
-padding:12px 28px;
-font-weight:bold;
-text-decoration:none;
-border-radius:8px;
-display:inline-block;
-transition:.3s;
-}
+<div class="badge">
+🚚 Free Delivery Across Pakistan
+</div>
 
-.btn:hover{
-transform:scale(1.05);
-background:white;
-}
+<h1>
+Premium Disposable Packaging Solutions
+</h1>
 
-/* SECTIONS */
-section{
-padding:80px 10%;
-}
+<p>
 
-h2{
-text-align:center;
-font-size:38px;
-margin-bottom:30px;
-}
+Worldpack Industries is one of Pakistan's trusted manufacturers of premium PET cups, paper cups, disposable lids and food packaging products.
 
-/* ABOUT */
-#about p{
-max-width:800px;
-margin:auto;
-text-align:center;
-font-size:18px;
-}
+</p>
 
-/* PRODUCTS GRID */
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
+<div class="hero-buttons">
 
-.card{
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(0,0,0,.1);
-transition:.3s;
-}
+<a href="#products" class="btn">
+View Products
+</a>
 
-.card:hover{
-transform:translateY(-8px);
-}
+<a href="#contact" class="btn-outline">
+Contact Us
+</a>
 
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
+</div>
 
-.card h3{
-padding:15px;
-}
+</div>
 
-.card p{
-padding:0 15px 20px;
-color:#666;
-}
+</section>
 
-/* CONTACT */
-.contact-box{
-max-width:600px;
-margin:auto;
-background:white;
-padding:30px;
-text-align:center;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,.1);
-}
+<section id="about">
 
-.whatsapp{
-display:inline-block;
-margin-top:10px;
-color:#25D366;
-font-weight:700;
-text-decoration:none;
-font-size:18px;
-}
+<h2>About Worldpack Industries</h2>
 
-.whatsapp:hover{
-text-decoration:underline;
-}
+<p>
 
-/* FOOTER */
-footer{
-background:#111;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:50px;
-}
+Worldpack Industries provides premium disposable packaging solutions for cafés, restaurants, bakeries, juice bars and food chains across Pakistan.
 
-/* ANIMATION */
-@keyframes fadeIn{
-from{opacity:0; transform:translateY(20px);}
-to{opacity:1; transform:translateY(0);}
-}
+We deliver premium quality products with competitive prices and free delivery nationwide.
 
-/* MOBILE */
-@media(max-width:768px){
+</p>
 
-.hero{
-justify-content:center;
-text-align:center;
-}
+</section>
 
-.hero h1{
-font-size:38px;
-}
+<section id="products">
 
-nav{
-margin-top:10px;
-}
-}
+<h2>Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="cup.jpg.jpeg" alt="">
+<h3>PET Cups</h3>
+<p>Crystal clear premium PET beverage cups for cafés and restaurants.</p>
+</div>
+
+<div class="card">
+<img src="lid.jpg.jpeg" alt="">
+<h3>Dome Lids</h3>
+<p>Premium dome lids for smoothies, shakes and cold drinks.</p>
+</div>
+
+<div class="card">
+<img src="lid.jpg (3) - Copy.jpeg" alt="">
+<h3>Flat Lids</h3>
+<p>Leak resistant premium flat lids with perfect fitting.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact-box">
+
+<h3>Email</h3>
+
+<p>worldpackcontact@gmail.com</p>
+
+<h3>WhatsApp</h3>
+
+<a class="whatsapp"
+href="https://wa.me/923271790907">
+
+<i class="fab fa-whatsapp"></i>
+
+Chat with Mian Faizan
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 Worldpack Industries
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
