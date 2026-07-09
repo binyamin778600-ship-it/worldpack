@@ -344,8 +344,7 @@ padding:90px 8%;
 
 .about-image{
     flex:1;
-    min-height:560px;
-}
+min-height:620px;}
 
 .about-image img{
     width:100%;
