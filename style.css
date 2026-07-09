@@ -336,14 +336,15 @@ padding:90px 8%;
 }
 
 .about-wrapper{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:60px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:stretch;
+    gap:60px;
 }
 
 .about-image{
-flex:1;
+    flex:1;
+    min-height:560px;
 }
 
 .about-image img{
