@@ -347,11 +347,11 @@ flex:1;
 }
 
 .about-image img{
-width:100%;
-border-radius:18px;
-display:block;
-box-shadow:0 20px 45px rgba(0,0,0,.15);
-transition:.4s;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
 }
 
 .about-image img:hover{
