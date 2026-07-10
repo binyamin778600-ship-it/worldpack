@@ -426,7 +426,10 @@ color:#666;
 @media(max-width:992px){
 
 .about-wrapper{
-flex-direction:column;
+grid-template-columns:1fr;
+gap:35px;
+}
+
 }
 
 .about-content{
